@@ -5,10 +5,8 @@ import os
 import json
 
 #設定帳號密碼
-#myemail = input("請輸入帳號 : ")
-#mypassword = input("請輸入密碼 : ")
-myemail = "D1044182022@gm.lhu.edu.tw"
-mypassword = "t78683423"
+myemail = input("請輸入帳號 : ")
+mypassword = input("請輸入密碼 : ")
 #今日時間
 date = datetime.datetime.now().date()
 #設定網址
