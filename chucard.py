@@ -47,8 +47,6 @@ with open(mypath+"\\dcard.json",'r',encoding="utf-8") as load_f:
     load_dict = json.load(load_f)
     all = load_dict["dcard"]
     #取出需要json資料
-    #test_data = "學校 : ", all["school"]
-    ok_data = "學校 : " , load_dict["dcard"]["school"]
     #card_data = "日期 : " , str(date) , "\n學校 : ",str(all["school"]),"\n科系 : " ,str(all["department"]) , "\n性別 : " , str(all["gender"]) ,"\n專長與興趣 : " , str(all["talent"]) , "\n社團 : " , str(all["club"]), "\n喜歡的課 :" , str(all["lecture"]) , "\n喜歡的國家" , str(all["lovedCountry"]),"\n最近的困擾 : " , str(all["trouble"]) , "\n可交換的才藝 : " , str(all["exchange"]) , "\n想嘗試的事情 : " , str(all["wantToTry"])
     print("日期 : " + str(date) + "\n學校 : "+str(all["school"]),"\n科系 : " +str(all["department"]) , "\n性別 : " + str(all["gender"]) ,"\n專長與興趣 : " + str(all["talent"]) , "\n社團 : " + str(all["club"]), "\n喜歡的課 :" + str(all["lecture"]) , "\n喜歡的國家" + str(all["lovedCountry"]),"\n最近的困擾 : " + str(all["trouble"]) , "\n可交換的才藝 : " + str(all["exchange"]) , "\n想嘗試的事情 : " + str(all["wantToTry"]))
 
