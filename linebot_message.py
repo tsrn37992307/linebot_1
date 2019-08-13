@@ -19,7 +19,7 @@ with open(chucard.mypath+"\\dcard.json",'r',encoding="utf-8") as load_f:
     load_dict = json.load(load_f)
     all = load_dict["dcard"]
     image_url = all["avatar"]
-    line_bot_api.push_message(user1ID,TextSendMessage(text= "今日時間 : "+ str(chucard.date) + "學校 : " + str(all["school"]) + "\n科系 : " + str(all["department"]) + "\n性別 : " + str(all["gender"]) + "\n專長與興趣 : " + str(all["talent"]) + "\n社團 : " + str(all["club"]) + "\n\n喜歡的課 :" + str(all["lecture"]) + "\n\n喜歡的國家" + str(all["lovedCountry"]) + "\n\n最近的困擾 : " + str(all["trouble"]) + "\n\n可交換的才藝 : " + str(all["exchange"]) + "\n\n想嘗試的事情 : " + str(all["wantToTry"])))
+    line_bot_api.push_message(user1ID,TextSendMessage(text= "今日時間 : "+ str(chucard.date) + "學校 : " + str(all["school"]) + "\n科系 : " + str(all["department"]) + "\n性別 : " + str(all["gender"]) + "\n專長與興趣 : " + str(all["talent"]) + "\n社團 : " + str(all["club"]) + "\n\n喜歡的課 :" + str(all["lecture"]) + "\n\n喜歡的國家 : " + str(all["lovedCountry"]) + "\n\n最近的困擾 : " + str(all["trouble"]) + "\n\n可交換的才藝 : " + str(all["exchange"]) + "\n\n想嘗試的事情 : " + str(all["wantToTry"])))
     line_bot_api.push_message(user1ID, ImageSendMessage(original_content_url=image_url, preview_image_url=image_url))
     load_f.close()
 
