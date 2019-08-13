@@ -1,3 +1,4 @@
+# coding=gbk
 from linebot import LineBotApi, WebhookHandler
 from linebot.models import *
 import os
